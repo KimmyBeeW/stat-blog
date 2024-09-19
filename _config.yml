@@ -2,25 +2,19 @@
 ## to customize your blog
 
 title: Coding in Color
-description: "This description of the blog will appear on the 'About' page." 
+description: "A lot of the code we use in data science is really simple, but we get intimidated because there is so much out there, and the code just starts to blend together. Let's get some examples and really get an idea for the simplicity of data visualization." 
 author: Kimberly Williams
-author_description: "This description of who you are will appear on the 'About' page." 
+author_description: "I am a Junior at BYU studying Statistics: Data Science. I love music, science, and playing games with my husband." 
 
 url: https://kimmybeew.github.io ## change this to https://yourusername.github.io
 baseurl: /stat-blog ## change this to the name of your blog repository
-header_image: /assets/img/headerimg.jpg ## change your header image if you want
+header_image: /assets/img/data-vis.jpg ## change your header image if you want
 
 ## Add your social media user names.  Github is required, the rest are optional
 social:
     github:  KimmyBeeW
-    twitter: 
-    facebook: 
-    email: 
-    linkedin: 
-    youtube: 
-    tumblr: 
-    website: 
-
+    email: bkimbere@byu.edu
+    linkedin: https://www.linkedin.com/in/kimberly-bee-williams/
 
 
 ### Advanced Settings (don't change below unless you know what you are doing)
