@@ -6,12 +6,12 @@ description: My first post with instructions and tips on how to create simple pl
 image: "/assets/img/data-vis3.0.png"
 display_image: false
 ---
-<p class="intro"><span class="dropcap">T</span>he Data Visualization aspect of Data Science can be scary with how many tools, IDEs, coding languages, and platforms that are available, so take a step back, and let's go back to basics and start with one of the most popular coding languages today: PYTHON</p>
+<p class="intro"><span class="dropcap">T</span>he Data Visualization aspect of Data Science can be scary with how many tools, IDEs, coding languages, and platforms that are available. Plus, if you're into Data Science, you may already be familiar with R and RStudio, but outside of stats, R is hardly used, and  it's always good to flesh out your portfolio of skills. So take a deep breath. Let's go back to basics and start with one of the most popular coding languages today: PYTHON</p>
 
 ### Where to get started: set up
-If you're coding in python, you'll really want an interface, but it doesn't need to be anything fancy. You can use an IDE like pycharm, a text-editor like VS code, or a browser-based tool like Google Collab. All three of which have free options: for [Pycharm Community Edition](https://www.jetbrains.com/pycharm/download/?section=mac) scroll down to Community Edition and select the dropdown for your computer type, for [VS Code](https://code.visualstudio.com/) just select the download button, and [Google Colab](https://colab.research.google.com/) is available to anyone with a google account.
+If you're coding in python, you'll really want an interface, but it doesn't need to be anything fancy. You can use an IDE like PyCharm, a text-editor like VS Code, or a browser-based tool like Google Collab. All three of which have free options: for [PyCharm Community Edition](https://www.jetbrains.com/pycharm/download/?section=mac) scroll down to Community Edition and select the dropdown for your computer type, for [VS Code](https://code.visualstudio.com/) just select the download button, and [Google Colab](https://colab.research.google.com/) is available to anyone with a google account.
 
-Now you'll want to install and import a couple of libraries. For the sake of this tutorial, we're going to use matplotlib.pyplot, and numpy. If it's your first time using these libraries in an IDE, Text Editor, or CLI, you'll need to install them. This is how I install it on my mac or for a Linux:
+Now you'll want to install and import a couple of libraries. For the sake of this tutorial, we're going to use matplotlib.pyplot, and numpy. If it's your first time using these libraries in an IDE, Text Editor, or CLI, you'll need to install them. This line in the computer terminal is how I install it on my mac (same for a Linux):
 ```
 python3 -m pip install "matplotlib"
 ```
@@ -21,13 +21,13 @@ py -m pip install "numpy"
 ```
 Or you can follow this [tutorial](https://packaging.python.org/en/latest/tutorials/installing-packages/) by Python if you get stuck. 
 
-Once the library has been installed (which you'll only need to do once), you'll import the library and shorten the name you use to reference, write these lines of code at the top of your file:
+Once the library has been installed (which you'll only need to do once), you'll import the library and shorten the name you use to reference. Import libraries at the top of your file:
 ```
 import matplotlib.pyplot as plt
 import numpy as np
 ```
 
-Now we're ready to get graphing.
+Now we're ready to get graphing!
 
 ### Plot Production
 #### Line Graphs
@@ -107,4 +107,24 @@ multi_lines_and_labels()
 ```
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/cool-line-graph.png" alt="" class="center"/>
 
-### The Rest of the article is Coming Soon
+#### Scatter Plots
+
+#### Bar Graphs
+
+#### Histogram
+
+#### Pie Charts: The Bane of Statisticians Existances
+Seriously, do not use pie charts for stats. Pie charts make it hard to actually tell the proportions between real data, so this is only for your information. Use at your own risk.
+```
+def pie():
+    counts = [4, 1, 2, 3]
+    plt.pie(counts)
+    plt.show()
+pie()
+```
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/pie.png" alt="" class="center"/>
+
+### You can do it!
+Granted, those were just the basics of data visualization in python, but everyone's got to start somewhere. In my experience, I learn how to code best when I copy someone elses code and turn it into my own thing, so I invite you to do the same. Get PyCharm, VS Code, or Google Collab and try out these graphs for yourself. Switch up the numbers, colors, and data, and don't be afraid to use Google or ChatGPT for ideas on how to expand the functionality of the graphs.
+
+Thanks for being willing to explore data visualization in python with me. Good luck coloring with code!
