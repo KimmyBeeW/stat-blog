@@ -22,7 +22,7 @@ py -m pip install "numpy"
 Or you can follow this [tutorial](https://packaging.python.org/en/latest/tutorials/installing-packages/) by Python if you get stuck. 
 
 Once the library has been installed (which you'll only need to do once), you'll import the library and shorten the name you use to reference, write these lines of code at the top of your file:
-```{python}
+```
 import matplotlib.pyplot as plt
 import numpy as np
 ```
@@ -34,7 +34,7 @@ Now we're ready to get graphing.
 Line Graphs are a great way to visualize trends in data. They're used for line of best fit, displaying the relationship between simple datasets or two parts of a more complex dataset. The x-axis is typically used to measure the time over which data is measured. Examples of line graphs include: stocks over hours, weight over months, price over season, # of ticket sales per day, etc.
 
 The first part of the code for the line graph is defining our line graph function and looks like this: 
-```{python}
+```
 def line(x_points, y_points, color):
     plt.plot(x_points, y_points, color = color)
     plt.show()
@@ -42,20 +42,20 @@ def line(x_points, y_points, color):
 <em>.plot and .show come from the matplotlib library and accessed using our shortcut "plt"</em>
 
 The function by itself doesn't do anything because we need to define the data. You can do that using two lists of the same length:
-```{python}
+```
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 y = [1, 4, 4, 3, 6, 8, 9, 11, 13]
 line(x, y, 'b')  
 ```
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph1.png" alt="" style="width:300px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph1.png" alt="" style="width:500px;"/>
 
 Or you can define a matrix/array with numpy:
-```{python}
+```
 data = np.array([[1, 13], [2, 11], [3, 10], [4, 8], [5, 7], [6, 6], [7, 4], [8, 2], [9, -1]])
 line(data[:, 0], data[:, 1], 'g')
 ```
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph2.png" alt="" style="width:300px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph2.png" alt="" style="width:500px;"/>
 
 
 ### The Rest of the article is Coming Soon
