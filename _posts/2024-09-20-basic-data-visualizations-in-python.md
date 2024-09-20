@@ -4,7 +4,7 @@ title:  "Basic Data Visualizations in Python"
 date: 2024-09-20
 description: My first post with instructions and tips on how to create simple plots in Python.   
 image: "/assets/img/data-vis3.0.png"
-display_image: false  # change this to true to display the image below the banner 
+display_image: false
 ---
 <p class="intro"><span class="dropcap">D</span>ata Visualization can be scary with how many tools, IDEs, coding languages, and platforms that are available, so take a step back, and let's go back to basics and start with one of the most popular coding languages today: PYTHON</p>
 
@@ -48,14 +48,14 @@ y = [1, 4, 4, 3, 6, 8, 9, 11, 13]
 line(x, y, 'b')  
 ```
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph1.png" alt="" style="width:500px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph1.png" alt="" class="center"/>
 
 Or you can define a matrix/array with numpy:
 ```
 data = np.array([[1, 13], [2, 11], [3, 10], [4, 8], [5, 7], [6, 6], [7, 4], [8, 2], [9, -1]])
 line(data[:, 0], data[:, 1], 'g')
 ```
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph2.png" alt="" style="width:500px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph2.png" alt="" class="center"/>
 
 
 ### The Rest of the article is Coming Soon
