@@ -29,7 +29,7 @@ import numpy as np
 
 Now we're ready to get graphing.
 
-## Plot Production
+### Plot Production
 #### Line Graphs
 Line Graphs are a great way to visualize trends in data. They're used for line of best fit, displaying the relationship between simple datasets or two parts of a more complex dataset. The x-axis is typically used to measure the time over which data is measured. Examples of line graphs include: stocks over hours, weight over months, price over season, # of ticket sales per day, etc.
 
@@ -48,16 +48,14 @@ y = [1, 4, 4, 3, 6, 8, 9, 11, 13]
 line(x, y, 'b')  
 ```
 
-<img src="./../assets/img/line-graph1.png" alt="" style="width:300px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph1.png" alt="" style="width:300px;"/>
 
 Or you can define a matrix/array with numpy:
 ```{python}
-data = np.array([[1, 13], [2, 11], [3, 10],
-                 [4, 8], [5, 7], [6, 6], 
-                 [7, 4], [8, 2], [9, -1]])
+data = np.array([[1, 13], [2, 11], [3, 10], [4, 8], [5, 7], [6, 6], [7, 4], [8, 2], [9, -1]])
 line(data[:, 0], data[:, 1], 'g')
 ```
-<img src="./../assets/img/line-graph2.png" alt="" style="width:300px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph2.png" alt="" style="width:300px;"/>
 
 
 ### The Rest of the article is Coming Soon
