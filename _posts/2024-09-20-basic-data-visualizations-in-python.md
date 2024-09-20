@@ -57,5 +57,54 @@ line(data[:, 0], data[:, 1], 'g')
 ```
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph2.png" alt="" class="center"/>
 
+What if you want to add more that one line? Well, matplotlib.pyplot offers many colors which can help you distinguish lines, and putting multiple plt.plots before a plt.show will let you put multiple lines on a single graph.
+```
+def colors():
+    x_points = [0, 1, 2, 3, 4, 5]
+    line1_y_points = [1, 2, 3, 4, 5, 6]
+    line2_y_points = [2, 3, 4, 5, 6, 7]
+    line3_y_points = [3, 4, 5, 6, 7, 8]
+    line4_y_points = [4, 5, 6, 7, 8, 9]
+    line5_y_points = [5, 6, 7, 8, 9, 10]
+    line6_y_points = [6, 7, 8, 9, 10, 11]
+    line7_y_points = [7, 8, 9, 10, 11, 12]
+    line8_y_points = [8, 9, 10, 11, 12, 13]
+
+    plt.plot(x_points, line1_y_points, 'r')  # red
+    plt.plot(x_points, line2_y_points, 'g')  # green
+    plt.plot(x_points, line3_y_points, 'b')  # blue
+    plt.plot(x_points, line4_y_points, 'c')  # cyan
+    plt.plot(x_points, line5_y_points, 'm')  # magenta
+    plt.plot(x_points, line6_y_points, 'y')  # yellow
+    plt.plot(x_points, line7_y_points, 'k')  # black
+    plt.plot(x_points, line8_y_points, 'w')  # white
+
+    plt.show()
+
+colors()
+```
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/multilines.png" alt="" class="center"/>
+
+Adding labels adds even more info! You could say it's pretty cool.
+
+```
+def multi_lines_and_labels():
+    x_points = [0, 1, 2, 3, 4, 5]
+    y1_points = [6, 7, 8, 9, 10, 10]
+    y2_points = [4, 5, 6, 5, 7, 10]
+
+    plt.plot(x_points, y1_points, label="You", color = 'b')
+    plt.plot(x_points, y2_points, label="Me", color = 'r')
+
+    plt.title("Our Coolness Levels")
+    plt.xlabel("Months learning Data Science")
+    plt.ylabel("Coolness Level")
+
+    plt.legend()
+    plt.show()
+
+multi_lines_and_labels()
+```
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/cool-line-graph.png" alt="" class="center"/>
 
 ### The Rest of the article is Coming Soon
