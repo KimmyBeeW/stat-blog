@@ -6,7 +6,7 @@ description: My first post with instructions and tips on how to create simple pl
 image: "/assets/img/data-vis3.0.png"
 display_image: false
 ---
-<p class="intro"><span class="dropcap">D</span>ata Visualization can be scary with how many tools, IDEs, coding languages, and platforms that are available, so take a step back, and let's go back to basics and start with one of the most popular coding languages today: PYTHON</p>
+<p class="intro"><span class="dropcap">T</span>he Data Visualization aspect of Data Science can be scary with how many tools, IDEs, coding languages, and platforms that are available, so take a step back, and let's go back to basics and start with one of the most popular coding languages today: PYTHON</p>
 
 ### Where to get started: set up
 If you're coding in python, you'll really want an interface, but it doesn't need to be anything fancy. You can use an IDE like pycharm, a text-editor like VS code, or a browser-based tool like Google Collab. All three of which have free options: for [Pycharm Community Edition](https://www.jetbrains.com/pycharm/download/?section=mac) scroll down to Community Edition and select the dropdown for your computer type, for [VS Code](https://code.visualstudio.com/) just select the download button, and [Google Colab](https://colab.research.google.com/) is available to anyone with a google account.
