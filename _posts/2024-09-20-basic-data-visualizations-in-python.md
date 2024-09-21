@@ -108,10 +108,73 @@ multi_lines_and_labels()
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/cool-line-graph.png" alt="" class="center"/>
 
 #### Scatter Plots
+Another way to visualize the relationship between two data catagories is a scatter plot. Rather than looking at the general trend line, scatter plots allow us to see points and their density. It also makes it easier to see points that have repeated x or y values.
+```
+def scatter(x_points, y_points):
+    plt.scatter(x_points, y_points)
+    plt.show()
+
+
+x3 = [1, 2, 2, 3, 4, 4, 4, 5, 6, 6, 7]
+y3 = [1, 3, 2, 3, 2, 4, 5, 5, 5.5, 6.5, 7]
+scatter(x3, y3)
+```
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/scatter.png" alt="" class="center"/>
 
 #### Bar Graphs
+Bar Graphs are a way to visualize the counts of your different factor levels or categorical data.
 
-#### Histogram
+If you had a bag of fruit, and wanted to see how many of each type you have, bar graphs are a way to see that! In this example we have a lot more Apples than any other fruit.
+```
+def bar(categories, counts):
+    plt.bar(categories, counts)
+    plt.show()
+
+
+fruit = ['Apple', 'Banana', 'Kiwi', 'Orange']
+f_counts = [5, 1, 3, 1]
+bar(fruit, f_counts)
+```
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/bar.png" alt="" class="center"/>
+
+#### Histograms
+```
+def hist(frequencies):
+  plt.hist(frequencies, [1, 2, 3, 4, 5, 6], color = 'g')
+  plt.show()
+
+freq = [
+    1, 1, 1, 1, 1, 1,  # 6 ones
+    2, 2, 2,  # 3 twos
+    3,  # 1 three
+    4, 4,  # 2 fours
+    5  # 1 five
+]
+hist(freq)
+```
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/histogram.png" alt="" class="center"/>
+
+The cool thing about plt.hist() is that it outputs other info, so if you don't just want the graph you can use this code:
+```
+def hist(frequencies):
+  bin_counts, bin_nums, item = plt.hist(frequencies, [1, 2, 3, 4, 5, 6], color = 'g')
+  print(f'Frequecies in each bin: {bin_counts}')
+  print(f'List of bin numbers: {bin_nums}')
+
+freq = [
+    1, 1, 1, 1, 1, 1,  # 6 ones
+    2, 2, 2,  # 3 twos
+    3,  # 1 three
+    4, 4,  # 2 fours
+    5  # 1 five
+]
+hist(freq)
+```
+It outputs:
+   Frequecies in each bin: [6. 3. 1. 2. 1.]
+   List of bin numbers: [1. 2. 3. 4. 5. 6.]
+   *the graph*
+
 
 #### Pie Charts: The Bane of Statisticians Existances
 Seriously, do not use pie charts for stats. Pie charts make it hard to actually tell the proportions between real data, so this is only for your information. Use at your own risk.
@@ -127,4 +190,4 @@ pie()
 ### You can do it!
 Granted, those were just the basics of data visualization in python, but everyone's got to start somewhere. In my experience, I learn how to code best when I copy someone elses code and turn it into my own thing, so I invite you to do the same. Get PyCharm, VS Code, or Google Collab and try out these graphs for yourself. Switch up the numbers, colors, and data, and don't be afraid to use Google or ChatGPT for ideas on how to expand the functionality of the graphs.
 
-Thanks for being willing to explore data visualization in python with me. Good luck coloring with code!
+Thanks for being willing to explore data visualization in python with me. Good luck coding in color!
