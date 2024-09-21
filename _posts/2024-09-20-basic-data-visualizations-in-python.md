@@ -154,28 +154,6 @@ hist(freq)
 ```
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/histogram.png" alt="" class="center"/>
 
-The cool thing about plt.hist() is that it outputs other info, so if you don't just want the graph you can use this code:
-```
-def hist(frequencies):
-  bin_counts, bin_nums, item = plt.hist(frequencies, [1, 2, 3, 4, 5, 6], color = 'g')
-  print(f'Frequecies in each bin: {bin_counts}')
-  print(f'List of bin numbers: {bin_nums}')
-
-freq = [
-    1, 1, 1, 1, 1, 1,  # 6 ones
-    2, 2, 2,  # 3 twos
-    3,  # 1 three
-    4, 4,  # 2 fours
-    5  # 1 five
-]
-hist(freq)
-```
-It outputs:
-   Frequecies in each bin: [6. 3. 1. 2. 1.]
-   List of bin numbers: [1. 2. 3. 4. 5. 6.]
-   *the graph*
-
-
 #### Pie Charts: The Bane of Statisticians Existances
 Seriously, do not use pie charts for stats. Pie charts make it hard to actually tell the proportions between real data, so this is only for your information. Use at your own risk.
 ```
