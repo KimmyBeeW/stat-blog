@@ -154,6 +154,17 @@ hist(freq)
 ```
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/histogram.png" alt="" class="center"/>
 
+#### Density Plot
+A density plot is used for the same thing as a histogram, but is a more accurate way to view the changes in data.
+```
+import numpy as np
+import seaborn as sns
+data = [1.5]*7 + [2.5]*2 + [3.5]*8 + [4.5]*3 + [5.5]*1 + [6.5]*8
+sns.set_style('whitegrid')
+sns.kdeplot(np.array(data), bw_method=0.5)
+```
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/density.png" alt="" class="center"/>
+
 #### Pie Charts: The Bane of Statisticians Existances
 Seriously, do not use pie charts for stats. Pie charts make it hard to actually tell the proportions between real data, so this is only for your information. Use at your own risk.
 ```
