@@ -278,12 +278,12 @@ DARK THEME STYLING
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color: black;
+		background-color: rgb(50, 50, 50);
 		color: white;
 	}
 
 	.content:after,
 	.post .featuredImage:before {
-		background: black;
+		background: rgb(50, 50, 50);
 	}
 }
