@@ -22,7 +22,7 @@ tr {
 		background-color: lighten($grey, 30%);
 
 		@media (prefers-color-scheme: dark) {
-			background-color: rgb(25,25,25)/*lighten(black, 10%)*/;
+			background-color: rgb(34,34,34)/*lighten(black, 10%)*/;
 		}
 	}
 }
