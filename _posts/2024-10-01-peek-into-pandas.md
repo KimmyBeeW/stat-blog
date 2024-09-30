@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Peek into Python's Pandas"
-date: 2024-09-23
+date: 2024-10-01
 description: Intro to the Python library Pandas and some of its uses in data manipulation.  
 image: "/assets/img/panda.png"
 display_image: false
