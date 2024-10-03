@@ -1,3 +1,3 @@
-## Another Stat386 Theme
+## Stats Blog
 
-This is another theme choice for your Stat 386 blog. 
+Built from Another Stat386 Blog Theme. This blog is about being creative with basic data visualization.
