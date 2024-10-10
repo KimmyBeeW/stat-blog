@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Peek into Python's Pandas"
-date: 2024-10-01
+date: 2024-10-14
 description: Intro to the Python library Pandas and some of its uses in data manipulation.  
 image: "/assets/img/panda.png"
 display_image: false
@@ -17,6 +17,10 @@ Otherwise, use pip:
 ```
 pip install pandas
 ```
+
+### Structures
+Pandas has two main data structures: Series and DataFrames.
+DataFrames are essentially spreadsheets with columns and rows
 
 ### ...Rest of the article coming soon!
 
