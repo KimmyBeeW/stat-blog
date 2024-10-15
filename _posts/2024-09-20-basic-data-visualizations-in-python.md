@@ -1,24 +1,18 @@
 ---
 layout: post
-title:  "Basic Data Visualizations in Python"
+title:  "Data's Paintbrush in Python"
 date: 2024-09-20
-description: Tutorial on how to create simple plots in Python.   
+description: "Let's make simple plots in Python using Matplotlib. What data do you want to see visualized?"
 image: "/assets/img/data-vis3.0.png"
 display_image: false
 ---
 <p class="intro"><span class="dropcap">T</span>he Data Visualization aspect of Data Science can be scary with how many tools, IDEs, coding languages, and platforms that are available. Plus, if you're into Data Science, you may already be familiar with R and RStudio, but outside of stats, R is hardly used, and  it's always good to flesh out your portfolio of skills. So take a deep breath. Let's go back to basics and start with one of the most popular coding languages today: PYTHON</p>
 
 ### Where to get started: set up
-If you're coding in python, you'll really want an interface, but it doesn't need to be anything fancy. You can use an IDE like PyCharm, a text-editor like VS Code, or a browser-based tool like Google Collab. All three of which have free options: for [PyCharm Community Edition](https://www.jetbrains.com/pycharm/download/?section=mac) scroll down to Community Edition and select the dropdown for your computer type, for [VS Code](https://code.visualstudio.com/) just select the download button, and [Google Colab](https://colab.research.google.com/) is available to anyone with a google account.
+Since this is a tutorial on how to create simple plots in Python we need to have a place to use it, so if you're coding in python, you'll really want an interface. It doesn't need to be anything fancy. You can use an IDE like PyCharm, a text-editor like VS Code, or a browser-based tool like Google Collab. All three of which have free options: for [PyCharm Community Edition](https://www.jetbrains.com/pycharm/download/?section=mac) scroll down to Community Edition and select the dropdown for your computer type, for [VS Code](https://code.visualstudio.com/) just select the download button, and [Google Colab](https://colab.research.google.com/) is available to anyone with a google account.
 
-Now you'll want to install and import a couple of libraries. For the sake of this tutorial, we're going to use matplotlib.pyplot, and numpy. If it's your first time using these libraries in an IDE, Text Editor, or CLI, you'll need to install them. This line in the computer terminal is how I install it on my mac (same for a Linux):
-```
-python3 -m pip install "matplotlib"
-```
-Pretty similar line for a windows:
-```
-py -m pip install "numpy"
-```
+Now you'll want to install and import a couple of libraries. For the sake of this tutorial, we're going to use matplotlib.pyplot, and numpy. If it's your first time using these libraries in an IDE, Text Editor, or CLI, you'll need to install them. This line in the computer terminal is how I install it on my mac (same for a Linux): ``` python3 -m pip install "matplotlib" ```
+Pretty similar line for a windows: ``` py -m pip install "numpy" ```
 Or you can follow this [tutorial](https://packaging.python.org/en/latest/tutorials/installing-packages/) by Python if you get stuck. 
 
 Once the library has been installed (which you'll only need to do once), you'll import the library and shorten the name you use to reference. Import libraries at the top of your file:
@@ -45,7 +39,7 @@ The function by itself doesn't do anything because we need to define the data. Y
 ```
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 y = [1, 4, 4, 3, 6, 8, 9, 11, 13]
-line(x, y, 'b')  
+line(x, y, 'b')  # calls on the function we just made
 ```
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/line-graph1.png" alt="" class="center"/>
@@ -177,6 +171,6 @@ pie()
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/pie.png" alt="" class="center"/>
 
 ### You can do it!
-Granted, those were just the basics of data visualization in python, but everyone's got to start somewhere. In my experience, I learn how to code best when I copy someone elses code and turn it into my own thing, so I invite you to do the same. Get PyCharm, VS Code, or Google Collab and try out these graphs for yourself. Switch up the numbers, colors, and data, and don't be afraid to use Google or ChatGPT for ideas on how to expand the functionality of the graphs.
+Granted, those were just the basics of data visualization in python, but everyone's got to start somewhere. In my experience, I learn how to code best when I copy someone elses code and turn it into my own thing, so I invite you to do the same. Get PyCharm, VS Code, or Google Collab and try out these graphs for yourself. Switch up the numbers, colors, and data, and don't be afraid to use Google or ChatGPT for ideas on how to expand the functionality of the graphs. If you want to go even further, explore these other [data visualization libraries](https://www.index.dev/blog/top-10-python-libraries-for-data-visualization).
 
 Thanks for being willing to explore data visualization in python with me. Good luck coding in color!
