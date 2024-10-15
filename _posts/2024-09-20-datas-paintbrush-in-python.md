@@ -11,8 +11,9 @@ display_image: false
 ### Where to get started: set up
 Since this is a tutorial on how to create simple plots in Python we need to have a place to use it, so if you're coding in python, you'll really want an interface. It doesn't need to be anything fancy. You can use an IDE like PyCharm, a text-editor like VS Code, or a browser-based tool like Google Collab. All three of which have free options: for [PyCharm Community Edition](https://www.jetbrains.com/pycharm/download/?section=mac) scroll down to Community Edition and select the dropdown for your computer type, for [VS Code](https://code.visualstudio.com/) just select the download button, and [Google Colab](https://colab.research.google.com/) is available to anyone with a google account.
 
-Now you'll want to install and import a couple of libraries. For the sake of this tutorial, we're going to use matplotlib.pyplot, and numpy. If it's your first time using these libraries in an IDE, Text Editor, or CLI, you'll need to install them. This line in the computer terminal is how I install it on my mac (same for a Linux): ``` python3 -m pip install "matplotlib" ```
-Pretty similar line for a windows: ``` py -m pip install "numpy" ```
+Now you'll want to install and import a couple of libraries. For the sake of this tutorial, we're going to use matplotlib.pyplot, and numpy. If it's your first time using these libraries in an IDE, Text Editor, or CLI, you'll need to install them. This line in the computer terminal is how I install it on my mac (same for a Linux): \```` python3 -m pip install "matplotlib" ```\`
+Pretty similar line for a windows: \```` py -m pip install "numpy" ```\`
+
 Or you can follow this [tutorial](https://packaging.python.org/en/latest/tutorials/installing-packages/) by Python if you get stuck. 
 
 Once the library has been installed (which you'll only need to do once), you'll import the library and shorten the name you use to reference. Import libraries at the top of your file:
