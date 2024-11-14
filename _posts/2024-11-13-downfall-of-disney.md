@@ -72,7 +72,7 @@ And the one we've all been waiting for, Opening Earnings over Time:
 And the zoomed in version:
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/lastfive.png" alt="" class="center"/>
 
-Which still tells us almost nothing. I guess we'll have to keep speculating and relying on stocks for now.
+Notice the peaks in 2019 and 2022? Maybe I was right after all.
 
 ### Want to do it yourself?
 Check out my [repo](https://github.com/KimmyBeeW/Disney-Web-Scraping) with all of the code I used to webscrape the Box Offic Mojo website, my RequestGuard file for parsing the robots.txt files, the data I gathered, and some helpful links I found. Web scraping is a lot easier than I remembered it being, it just takes some puzzling and time. Go analyze data about your own interests, and always remember to have fun coding in color!
