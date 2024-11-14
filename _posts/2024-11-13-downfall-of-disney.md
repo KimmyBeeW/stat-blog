@@ -28,13 +28,13 @@ Now that we have an overview of what the shareholders think, let's look at what 
 + [DisneyToon Studios](https://www.boxofficemojo.com/brand/bn4185061890/) – A division of Disney, closed in 2018.
 + [Disneynature](https://www.boxofficemojo.com/brand/bn3245537794/)
 
-### Mini Web-scraping tutorial
+### Mini Web-scraping tutorial for Python
 When web-scraping data online, you must ALWAYS check the robots.txt file. It tells you what you can and should not scrape, and how fast you can scrape it. Nearly every domain has one, and if they don't it is common curtesy to add a sleep timer. (Here is some example code since I didn't need to use one in my web-scraping):
 ```
 websites = []
 
 for link in links:
-    time.sleep(10)
+    time.sleep(10)  # sleep timer for 10 seconds
     r = requests.get(link)
     bs = BeautifulSoup(r3.text)
     try:
