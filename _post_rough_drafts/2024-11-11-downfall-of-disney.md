@@ -20,8 +20,8 @@ Now that we have an overview of what the shareholders think, let's look at what 
 + [Marvel Comics](https://www.boxofficemojo.com/brand/bn3732077058/) – Disney acquired Marvel Entertainment in 2009.
 + [Lucasfilm](https://www.boxofficemojo.com/brand/bn4168284674/) – Disney purchased Lucasfilm in 2012.
 + [Pixar](https://www.boxofficemojo.com/brand/bn3530750466/) – Acquired by Disney in 2006.
-+ [Walt Disney Animation Studios](https://www.boxofficemojo.com/brand/bn3295869442/) – Owned by Disney.
++ [Walt Disney Animation Studios](https://www.boxofficemojo.com/brand/bn3295869442/)
 + [Blue Sky Studios](https://www.boxofficemojo.com/brand/bn3430087170/) – Disney acquired Blue Sky as part of the 2019 purchase of 21st Century Fox, but it was shut down in 2021.
-+ [Disney Channel](https://www.boxofficemojo.com/brand/bn3446864386/) – Owned by Disney.
-+ [DisneyToon Studios](https://www.boxofficemojo.com/brand/bn4185061890/) – A division of Disney, although it was closed in 2018.
-+ [Disneynature](https://www.boxofficemojo.com/brand/bn3245537794/) – Owned by Disney.
++ [Disney Channel](https://www.boxofficemojo.com/brand/bn3446864386/)
++ [DisneyToon Studios](https://www.boxofficemojo.com/brand/bn4185061890/) – A division of Disney, closed in 2018.
++ [Disneynature](https://www.boxofficemojo.com/brand/bn3245537794/)
