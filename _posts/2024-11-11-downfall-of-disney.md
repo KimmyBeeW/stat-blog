@@ -25,3 +25,7 @@ Now that we have an overview of what the shareholders think, let's look at what 
 + [Disney Channel](https://www.boxofficemojo.com/brand/bn3446864386/)
 + [DisneyToon Studios](https://www.boxofficemojo.com/brand/bn4185061890/) – A division of Disney, closed in 2018.
 + [Disneynature](https://www.boxofficemojo.com/brand/bn3245537794/)
+
+
+### Want to do it yourself?
+Check out my [repo](https://github.com/KimmyBeeW/Disney-Web-Scraping) with all of the code I used to webscrape the Box Offic Mojo website, my RequestGuard file for parsing the robots.txt files, the data I gathered, and some helpful links I found. Web scraping is a lot easier than I remembered it being, it just takes some puzzling and time. Go analyze data about your own interests, and always remember to have fun coding in color!
