@@ -3,7 +3,7 @@ layout: post
 title:  "The Downfall of Disney? Once upon a Web Scraper"
 date: 2024-11-13
 description: "Disney movies haven't been the same for a few years, and I've been missing the magic. Just me? Disagree? The data is all there, let's web scrape and find out."
-image: "/assets/img/data-vis3.0.png"
+image: "/assets/img/data-vis2.5.png"
 display_image: false
 ---
 <p class="intro"><span class="dropcap">O</span>kay, downfall may be a little dramatic, but if Disney continues at the rate it's going, I may not be far off. I used to be obsessed with the MCU. I loved watching all the theory videos on YouTube and was so excited every time a new movie was announced, but when, epic though it was, Endgame managed to kill off or fatally change many of my favorite characters, I knew the MCU, and Disney as a whole, would never be the same.</p>
@@ -55,6 +55,12 @@ Now you simply inspect the pages HTML by right clicking on the page, hovering ov
 
 ### Drum roll for the data pulled
 After scraping the data from the different brands, I combined it into a csv with 204 movies, reranked them to align with the combination, and called it [disney_owned_movies.csv](https://github.com/KimmyBeeW/Disney-Web-Scraping/blob/main/datasets/disney_owned_movies.csv). I realized that there were plenty of movies missing from the dataset not attatched to brands listed on Box Office Mojo, such as the Chronicles of Narnia movies, but my main points of interest revolved around Marvel, Pixar, and Walt Disney Animation, so I'll leave adding the other Disney movies for you to explore if you'd like.
+
+Without further ado, here are the highlights, and you can decide what you think of Disney's fate. Only time will truly tell.
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/brandsGrossIncome.png" alt="" class="center"/>
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/earningsVSbrand.png" alt="" class="center"/>
 
 
 ### Want to do it yourself?
