@@ -16,4 +16,12 @@ Because of the rise of inflation and the noteriaty of the company, Disney is sti
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/disstocks_allyrs.png" alt="" class="center"/>
 
 ### A tale as old as Box Office numbers
-Now that we have an overview of what the shareholders think, let's look at what actual movie-goers think by how they voted with their ticket purchases. [Box Office Mojo](https://www.boxofficemojo.com/brand/?ref_=bo_nb_gs_secondarytab) has a really awesome collection of brands, their respective movies, and info about those movies' lifetime gross income to date, max number of theaters, opening weekend gross income, opening number of theaters, release date, and distributer. It's really fun to look through their website, but I really wanted an aggregate of brands
+Now that we have an overview of what the shareholders think, let's look at what actual movie-goers think by how they voted with their ticket purchases. [Box Office Mojo](https://www.boxofficemojo.com/brand/?ref_=bo_nb_gs_secondarytab) has a really awesome collection of brands, their respective movies, and info about those movies' lifetime gross income to date, max number of theaters, opening weekend gross income, opening number of theaters, release date, and distributer. It's fun to look through their website, but I really wanted an aggregate of brands owned by disney, so I used web-scraping to look at the following brands from the [Box Office Mojo Website](https://www.boxofficemojo.com/brand/?ref_=bo_nb_gs_secondarytab):
++ [Marvel Comics](https://www.boxofficemojo.com/brand/bn3732077058/) – Disney acquired Marvel Entertainment in 2009.
++ [Lucasfilm](https://www.boxofficemojo.com/brand/bn4168284674/) – Disney purchased Lucasfilm in 2012.
++ [Pixar](https://www.boxofficemojo.com/brand/bn3530750466/) – Acquired by Disney in 2006.
++ [Walt Disney Animation Studios](https://www.boxofficemojo.com/brand/bn3295869442/) – Owned by Disney.
++ [Blue Sky Studios](https://www.boxofficemojo.com/brand/bn3430087170/) – Disney acquired Blue Sky as part of the 2019 purchase of 21st Century Fox, but it was shut down in 2021.
++ [Disney Channel](https://www.boxofficemojo.com/brand/bn3446864386/) – Owned by Disney.
++ [DisneyToon Studios](https://www.boxofficemojo.com/brand/bn4185061890/) – A division of Disney, although it was closed in 2018.
++ [Disneynature](https://www.boxofficemojo.com/brand/bn3245537794/) – Owned by Disney.
