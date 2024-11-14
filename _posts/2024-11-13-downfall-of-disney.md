@@ -11,10 +11,10 @@ display_image: false
 Around the same time in 2019 and 2020 Disney's live-action remakes churned out some interesting choices with a not-at-all-live-action "live action" Lion King including ["Can You Feel the Love Tonight"](https://youtu.be/DZr-VTULYQ8?si=H3eaDo2D2kChAh_x) sung in the middle of the day and the titular character of Mulan's fighting spirit being replaced with [magical](https://www.imdb.com/title/tt4566758/reviews/) [chi](https://www.reddit.com/r/TwoBestFriendsPlay/comments/ily73g/you_dont_just_have_power_you_have_chi_power_or/?rdt=65373) [superpowers](https://www.polygon.com/entertainment/2020/9/3/21419876/mulan-review-live-action-disney-plus), in other words completely missing the points of some of the old stories. The animations are still beautiful and the stories are still enjoyable, but I started sensing a pattern when looking back on those memories, and it got me wondering if those changes, and the apparent emphasis on quantity over quality, was starting to hurt Disney as a business. So I took my newfound web-scraping skills to the [Box Office Mojo](https://www.boxofficemojo.com/) website to see what the movie theater goers votes had to say.
 
 ### How has Disney been doing as a company over the last few years?
-Since Disney does more than just movies, I figured we should take a look first on how the shareholders view Disney's success in terms of what they're willing to pay for it in stocks. I got this stock data from [Yahoo! Finance](https://finance.yahoo.com/quote/DIS/history/?period1=1571423893&period2=1729276688), and you can see that, other than the obvious dip caused by the pandemic in March of 2020, Disney was on the rise until around February 2021, then fell again November of 2021, and hasn't gone above $130 since the beginning of 2022.
+Since Disney does more than just movies, I figured we should take a look first on how the shareholders view Disney's success in terms of what they're willing to pay for it in stocks. I got this stock data from [Yahoo! Finance](https://finance.yahoo.com/quote/DIS/history/?period1=1571423893&period2=1729276688), and you can see that, other than the obvious dip caused by the pandemic in March of 2020, Disney was on the rise until around February 2021, then fell again November of 2021, and hasn't gone above $130 since the beginning of 2022. Which incidentally aligns with the terror that was "Doctor Strange in the Multiverse of Madness" (May 2022). It could be coincindence though.
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/disstocks5yrs.png" alt="" class="center"/>
 
-Because of the rise of inflation and the noteriaty of the company, Disney is still doing better than pre-2014. Loyal fans are still clinging on to the nostalgia of the past and the merch of the present, and there is no doubt that Disney is still a successful company. It's just an interesting thing to note before diving into the success of current movies.
+Because of the rise of inflation and the noteriaty of the company, Disney is still doing better than pre-2014, yet further evidence against them falling anytime soon. Loyal fans are still clinging on to the nostalgia of the past and the merch of the present, and there is no doubt that Disney is still a successful company. It's just an interesting pattern to note before diving into the success of current movies.
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/disstocks_allyrs.png" alt="" class="center"/>
 
 ### A tale as old as Box Office numbers
@@ -27,6 +27,13 @@ Now that we have an overview of what the shareholders think, let's look at what 
 + [Disney Channel](https://www.boxofficemojo.com/brand/bn3446864386/)
 + [DisneyToon Studios](https://www.boxofficemojo.com/brand/bn4185061890/) – A division of Disney, closed in 2018.
 + [Disneynature](https://www.boxofficemojo.com/brand/bn3245537794/)
+
+### Mini Web-scraping tutorial
+When web-scraping data online, you must ALWAYS check the robots.txt file. It tells you what you can and should not scrape, and how fast you can scrape it. Nearly every domain has one, and if they don't it is common curtesy to add a sleep timer. I did this part by using my RequestGuard class in python to check that the urls I was scraping from weren't part of the forbidden list, but I recently learned about the urllib in python that can do the same thing for you. Check out this [brief overview](https://docs.python.org/3/library/urllib.robotparser.html) to learn more. Everthing was good for my urls so I moved on to the actual data gathering.
+
+I used bs4.[BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), but if the website you're trying to scrape has buttons that need clicking, you'll want to use [Selenium](https://www.zenrows.com/blog/selenium-vs-beautifulsoup).
+
+Now you simply inspect the pages HTML by right clicking on the page, hovering over the HTML parts until the data you want to scrape is highlighted and find the unique tags attched to those data points. For readability, I'd also recommend converting the data to a pandas [DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html).
 
 
 ### Want to do it yourself?
