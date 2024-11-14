@@ -29,9 +29,23 @@ Now that we have an overview of what the shareholders think, let's look at what 
 + [Disneynature](https://www.boxofficemojo.com/brand/bn3245537794/)
 
 ### Mini Web-scraping tutorial
-When web-scraping data online, you must ALWAYS check the robots.txt file. It tells you what you can and should not scrape, and how fast you can scrape it. Nearly every domain has one, and if they don't it is common curtesy to add a sleep timer. I did this part by using my RequestGuard class in python to check that the urls I was scraping from weren't part of the forbidden list, but I recently learned about the urllib in python that can do the same thing for you. Check out this [brief overview](https://docs.python.org/3/library/urllib.robotparser.html) to learn more. Everthing was good for my urls so I moved on to the actual data gathering.
+When web-scraping data online, you must ALWAYS check the robots.txt file. It tells you what you can and should not scrape, and how fast you can scrape it. Nearly every domain has one, and if they don't it is common curtesy to add a sleep timer. (Here is some example code since I didn't need to use one in my web-scraping):
+```
+websites = []
 
-I used bs4.[BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), but if the website you're trying to scrape has buttons that need clicking, you'll want to use [Selenium](https://www.zenrows.com/blog/selenium-vs-beautifulsoup).
+for link in links:
+    time.sleep(10)
+    r = requests.get(link)
+    bs = BeautifulSoup(r3.text)
+    try:
+        website = bs.find('div', {'class': 'unique_tag_text_from_html'}).find('a')['href']
+    except:
+        website = None
+    websites.append(website)
+```
+I did this part by using my RequestGuard class in python to check that the urls I was scraping from weren't part of the forbidden list, but I recently learned about the urllib in python that can do the same thing for you. Check out this [brief overview](https://docs.python.org/3/library/urllib.robotparser.html) to learn more. Everthing was good for my urls so I moved on to the actual data gathering.
+
+I used [bs4.BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), but if the website you're trying to scrape has buttons that need clicking, you'll want to use [Selenium](https://www.zenrows.com/blog/selenium-vs-beautifulsoup).
 
 Now you simply inspect the pages HTML by right clicking on the page, hovering over the HTML parts until the data you want to scrape is highlighted and find the unique tags attched to those data points. For readability, I'd also recommend converting the data to a pandas [DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html).
 
