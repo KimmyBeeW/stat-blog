@@ -8,11 +8,11 @@ display_image: false
 ---
 <p class="intro"><span class="dropcap">O</span>kay, downfall may be a little dramatic, but if Disney continues at the rate it's going, I may not be far off. I used to be obsessed with the MCU. I loved watching all the theory videos on YouTube and was so excited every time a new movie was announced, but when, epic though it was, Endgame managed to kill off or fatally change many of my favorite characters, I knew the MCU, and Disney as a whole, would never be the same.</p>
 
-Around the same time in 2019 and 2020 Disney's live-action remakes churned out some interesting choices with a not-at-all-live-action "live action" Lion King including ["Can You Feel the Love Tonight"](https://youtu.be/DZr-VTULYQ8?si=H3eaDo2D2kChAh_x) sung in the middle of the day and the titular character of Mulan's fighting spirit being replaced with [magical chi superpowers](https://www.polygon.com/entertainment/2020/9/3/21419876/mulan-review-live-action-disney-plus), in other words completely missing the points of some of the old stories. The animations are still beautiful and the stories are still enjoyable, but I started sensing a pattern when looking back on those memories, and it got me wondering if those changes, and the apparent emphasis on quantity over quality, was starting to hurt Disney as a business. So I took my newfound web-scraping skills to the [Box Office Mojo](https://www.boxofficemojo.com/) website to see what the movie theater goers votes had to say.
+Around the same time in 2019 and 2020 Disney's live-action remakes churned out some interesting choices with a not-at-all-live-action "live action" Lion King including ["Can You Feel the Love Tonight"](https://youtu.be/DZr-VTULYQ8?si=H3eaDo2D2kChAh_x) sung in the middle of the day and the titular character of Mulan's fighting spirit being replaced with [magical chi superpowers](https://www.polygon.com/entertainment/2020/9/3/21419876/mulan-review-live-action-disney-plus), in other words completely missing the points of some of the old stories. The animations are still beautiful and the stories are still enjoyable, but it got me wondering if those changes, and the apparent emphasis on quantity over quality, was starting to hurt Disney as a business. So I took my newfound web-scraping skills to the [Box Office Mojo](https://www.boxofficemojo.com/) website and [Yahoo! Finance](https://finance.yahoo.com/quote/DIS/history/?period1=1571423893&period2=1729276688) to see what the movie theater goers and stock holders had to say.
 
 
 ### How has Disney been doing as a company over the last few years?
-Since Disney does more than just movies, I figured we should take a look first on how the shareholders view Disney's success in terms of what they're willing to pay for it in stocks. I got this stock data from [Yahoo! Finance](https://finance.yahoo.com/quote/DIS/history/?period1=1571423893&period2=1729276688), and you can see that, other than the obvious dip caused by the pandemic in March of 2020, Disney was on the rise until around February 2021, then fell again November of 2021, and hasn't gone above $130 since the beginning of 2022. Which incidentally aligns with the terror that was "Doctor Strange in the Multiverse of Madness" (May 2022). It could be coincindence though.
+Disney does more than just movies, so let's look at how the shareholders view Disney's success. I got this stock data from [Yahoo! Finance](https://finance.yahoo.com/quote/DIS/history/?period1=1571423893&period2=1729276688), and you can see that, other than the obvious dip caused by the pandemic in March of 2020, Disney was on the rise until around February 2021, then fell again November of 2021, and hasn't gone above $130 since the beginning of 2022. Which incidentally aligns with the terror that was "Doctor Strange in the Multiverse of Madness" (May 2022). It could be coincindence though.
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/disstocks5yrs.png" alt="" class="center"/>
 
 Because of the rise of inflation and the noteriaty of the company, Disney is still doing better than pre-2014, yet further evidence against them falling anytime soon. Loyal fans are still clinging on to the nostalgia of the past and the merch of the present, and there is no doubt that Disney is still a successful company. It's just an interesting pattern to note before diving into the success of current movies.
@@ -20,7 +20,7 @@ Because of the rise of inflation and the noteriaty of the company, Disney is sti
 
 
 ### A tale as old as Box Office numbers
-Now that we have an overview of what the shareholders think, let's look at what actual movie-goers think by how they voted with their ticket purchases. [Box Office Mojo](https://www.boxofficemojo.com/brand/?ref_=bo_nb_gs_secondarytab) has a really awesome collection of brands, their respective movies, and info about those movies' lifetime gross income to date, max number of theaters, opening weekend gross income, opening number of theaters, release date, and distributer. It's fun to look through their website, but I really wanted an aggregate of brands owned by disney, so I used web-scraping to look at the following brands from the [Box Office Mojo Website](https://www.boxofficemojo.com/brand/?ref_=bo_nb_gs_secondarytab):
+Now that we have an overview of what the shareholders think, let's look at what actual movie-goers think. [Box Office Mojo](https://www.boxofficemojo.com/brand/?ref_=bo_nb_gs_secondarytab) has a really awesome collection of brands, their respective movies, and info about those movies' lifetime gross income to date, max number of theaters, opening weekend gross income, opening number of theaters, release date, and distributer. It's fun to look through their website, but I really wanted an aggregate of brands owned by disney, so I used web-scraping to look at the following brands from the [Box Office Mojo Website](https://www.boxofficemojo.com/brand/?ref_=bo_nb_gs_secondarytab):
 + [Marvel Comics](https://www.boxofficemojo.com/brand/bn3732077058/) – Disney acquired Marvel Entertainment in 2009.
 + [Lucasfilm](https://www.boxofficemojo.com/brand/bn4168284674/) – Disney purchased Lucasfilm in 2012.
 + [Pixar](https://www.boxofficemojo.com/brand/bn3530750466/) – Acquired by Disney in 2006.
@@ -52,6 +52,34 @@ I used [bs4.BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc
 
 Now you simply inspect the pages HTML by right clicking on the page, hovering over the HTML parts until the data you want to scrape is highlighted and find the unique tags attched to those data points. For readability, I'd also recommend converting the data to a pandas [DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html).
 
+My code looks like this:
+```
+url = "https://www.boxofficemojo.com/brand/bn3732077058/"
+rg = RG(url)
+if rg.can_follow_link(url):
+    print("robot.txt allows scraping for this page") 
+
+r = requests.get(url)
+print(r.status_code)  # if it's 200 we're good to go
+
+soup = BeautifulSoup(r.text)  # this gets the whole html soup object
+container = soup.find('div', {'class': 'a-section imdb-scroll-table mojo-gutter'})  # a smaller chunk to make it easier to find names
+```
+
+Once you have a container, you get to play "find the pieces" with your data. When you know what the rows are contained in (usually something like a 'tr' table row tag.) Then you can iterate through and make a dataframe:
+```
+items = container.find_all('tr')
+ranks, titles, gross, max_theaters, opening_earnings, opening_num_thtrs, release_dates, studios = [], [], [], [], [], [], [], []
+for row in items[1:]:
+    rank = row.find('td', class_='mojo-field-type-rank').text
+    ranks.append(rank)
+    title = row.find('td', class_='mojo-field-type-release').text
+    titles.append(title)
+    life_gross = row.find  # etc etc (check out repo for full code)
+
+# combine the lists to make a pandas DataFrame
+df = pd.DataFrame({'Rank': ranks, 'Title': titles, 'Gross Income': gross, 'Max Theaters': max_theaters, 'Opening Earnings': opening_earnings, 'Opening Num Theaters': opening_num_thtrs, 'Release Dates': release_dates, 'Studio': studios}).drop_duplicates().reset_index(drop=True)
+```
 
 ### Drum roll for the data pulled
 After scraping the data from the different brands, I combined it into a csv with 204 movies, reranked them to align with the combination, and called it [disney_owned_movies.csv](https://github.com/KimmyBeeW/Disney-Web-Scraping/blob/main/datasets/disney_owned_movies.csv). I realized that there were plenty of movies missing from the dataset not attatched to brands listed on Box Office Mojo, such as the Chronicles of Narnia movies, but my main points of interest revolved around Marvel, Pixar, and Walt Disney Animation, so I'll leave adding the other Disney movies for you to explore if you'd like.
