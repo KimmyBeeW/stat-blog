@@ -88,10 +88,15 @@ Without further ado, here are the highlights, and you can decide what you think 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/brandsGrossIncome.png" alt="" class="center"/>
 
+Marvel is clearly Disney's highest grossing brand at the moment, so it was a wise purchasing descision, but it also means Marvel plays a huge role in Disney's success.
+
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/earningsVSbrand.png" alt="" class="center"/>
+
+And the number of opening theaters doesn't always spell success, but it is interesting to note the power of releasing studio influence.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/earningsVSMaxTheaters.png" alt="" class="center"/>
 
+No surprise here, the movie attributes are pretty highly correlated (just look at the bottom left triangle) meaning that they're all affected by the same thing or by each other.
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/correlationMovies.png" alt="" class="center"/>
 
 And the one we've all been waiting for, Opening Earnings over Time:
@@ -100,7 +105,9 @@ And the one we've all been waiting for, Opening Earnings over Time:
 And the zoomed in version:
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/lastfive.png" alt="" class="center"/>
 
-Notice the peaks in 2019 and 2022? Maybe I was right after all.
+Notice the peaks in 2019 and 2022? Maybe I was right after all. The beginnings of a pattern are occuring and it doesn't look too good for our heroes, especially when compared to the stock data we gathered earlier.
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/disstocks5yrs.png" alt="" class="center"/>
 
 ### Want to do it yourself?
 Check out my [repo](https://github.com/KimmyBeeW/Disney-Web-Scraping) with all of the code I used to webscrape the Box Offic Mojo website, my RequestGuard file for parsing the robots.txt files, the data I gathered, and some helpful links I found. Web scraping is a lot easier than I remembered it being, it just takes some puzzling and time. Go analyze data about your own interests, and always remember to have fun coding in color!
