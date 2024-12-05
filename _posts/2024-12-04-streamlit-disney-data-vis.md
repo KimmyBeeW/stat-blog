@@ -6,11 +6,11 @@ description: "If you'd like to explore more of the Disney stock and movie data I
 image: "/assets/img/marv_dis.webp"
 display_image: false
 ---
-<p class="intro"><span class="dropcap">D</span>ata visualization gets even more memorable when it can be played with. Static images can show you a good overview, but if a picture's worth a thousand words, then a movie should be worth 100 million. Pull up the <a href = 'https://disney-stocks-and-movies.streamlit.app/'>webapp</a> side by side if you'd like to see the value. (And check out the GitHub <a href = 'https://github.com/KimmyBeeW/streamlit-disney-datavis/'>repo</a> for the full code I used.)</p> 
+<p class="intro"><span class="dropcap">D</span>ata visualization gets even more memorable when it can be played with. Static images can show you a good overview, but if a picture's worth a thousand words, then a movie should be worth 100 million. Pull up the <a href = 'https://disney-stocks-and-movies.streamlit.app/'>webapp</a> side by side if you'd like to see the value. (And check out the GitHub <a href = 'https://github.com/KimmyBeeW/streamlit-disney-datavis/'>repo</a> for the full code I used.) Together we can answer the question: How has Disney been doing as a company over the last few years?</p> 
 
 
 ### How to build a Streamlit app
-You can attach your github account to streamlit and deploy your app directly from there by signing up for the free [community cloud](https://streamlit.io/cloud) and signing in with your github account. Once you have an account, initialize a new repo for your app, create a main.py file (or whatever you'd like to call it) and a requirements.txt file, and get to writing. You'll need to import the ```streamlit``` library, and probably a few others. My import list on main.py looked like this for this app:
+You can attach your github account to streamlit and deploy an app directly from there by signing up for the free [community cloud](https://streamlit.io/cloud) and signing in with your github account. Once you have an account, you can deploy an app by someone else, or initialize a new repo for your app, create a main.py file (or whatever you'd like to call it) and a requirements.txt file, and get to writing. If you're making one for yourself, you'll need to import the ```streamlit``` library, and probably a few others. My import list on main.py looked like this for this app:
 
 ```
 import streamlit as st
