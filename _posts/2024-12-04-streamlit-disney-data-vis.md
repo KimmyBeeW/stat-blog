@@ -74,3 +74,11 @@ with tab1:
                   color_discrete_map=val_colors)
     st.plotly_chart(fig)
 ```
+Now I can see a wide range of years and really put into perspecive how Disney's stocks are doing. Hovering over the peak allows me to see that Disney's highest stock price in the last few years was $203 back in March of 2021 and that it hasn't been that high since. But I could play with the slider and go check out how Disney was doing back in the 1960s if I wanted to.
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/stmlt-linegraph.png" alt="" class="center"/>
+
+
+
+
+
+
