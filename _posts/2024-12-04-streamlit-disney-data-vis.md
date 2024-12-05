@@ -79,6 +79,7 @@ Now I can see a wide range of years and really put into perspecive how Disney's 
 
 Those sidebar buttons from earlier can be used to look at the data from different brands so you can see patterns like peaks in the late 2010s and how none of the newer movies have even gotten close to the same opening revenue. Of course part of that can be explained by the change in culture following the pandemic in 2020, but it also coincides with the release of Disney+ in November of 2019.
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/stmlt-marvel-scatter.png" alt="" class="center"/>
+
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/stmlt-lucasfilm-scatter.png" alt="" class="center"/>
 
 Interested in more ways to visualize your data? Me too! Streamlit has lots of resources for learning about their cool features like [input widgets](https://docs.streamlit.io/develop/api-reference/widgets), [tabs](https://docs.streamlit.io/develop/api-reference/layout/st.tabs), and the [sidebar](https://docs.streamlit.io/develop/api-reference/layout/st.sidebar). And of course if you want to continue learning from my code, you can always check out my [repo](https://github.com/KimmyBeeW/streamlit-disney-datavis) and the code I used to implement the cool features in my [streamlit app](https://disney-stocks-and-movies.streamlit.app/).
