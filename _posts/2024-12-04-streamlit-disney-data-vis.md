@@ -77,8 +77,9 @@ with tab1:
 Now I can see a wide range of years and really put into perspecive how Disney's stocks are doing. Hovering over the peak allows me to see that Disney's highest stock price in the last few years was $203 back in March of 2021 and that it hasn't been that high since. But I could play with the slider and go check out how Disney was doing back in the 1960s if I wanted to.
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/stmlt-linegraph.png" alt="" class="center"/>
 
+Interested in more ways to visualize your data? Me too! Streamlit has lots of resources for learning about their cool features like [input widgets](https://docs.streamlit.io/develop/api-reference/widgets), [tabs](https://docs.streamlit.io/develop/api-reference/layout/st.tabs), and the [sidebar](https://docs.streamlit.io/develop/api-reference/layout/st.sidebar). And of course if you want to continue learning from my code, you can always check out my [repo](https://github.com/KimmyBeeW/streamlit-disney-datavis) and the code I used to implement the cool features in my [streamlit app](https://disney-stocks-and-movies.streamlit.app/).
 
-
-
+### At Last I See The Light
+Building my little app helped me see my data in a better light, and it really did help me understand the patterns I noticed before to a deeper level. The stocks are definitely sinking, and the movies are aligning with that pattern, but hopefully Disney can learn from its past mistakes and bring back the magic. For now I hope this little tutorial brought some magic to your life, and that you'll enjoy coding in color!
 
 
