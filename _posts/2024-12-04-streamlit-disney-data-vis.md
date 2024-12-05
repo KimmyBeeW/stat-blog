@@ -10,7 +10,7 @@ display_image: false
 
 
 ### How to build a Streamlit app
-You can attach your github account to streamlit and deploy an app directly from there by signing up for the free [community cloud](https://streamlit.io/cloud) and signing in with your github account. Once you have an account, you can deploy an app by someone else, or initialize a new repo for your app, create a main.py file (or whatever you'd like to call it) and a requirements.txt file, and get to writing. If you're making one for yourself, you'll need to import the ```streamlit``` library, and probably a few others. My import list on main.py looked like this for this app:
+You can attach your github account to streamlit and deploy an app directly from there by signing up for the free [community cloud](https://streamlit.io/cloud) and signing in with your github account. Once you have an account, you can deploy an app by someone else, or initialize a new repo for your app, create a main.py file (or whatever you'd like to call it) and a requirements.txt file, and get to writing. If you're making one for yourself, you'll need to import the ```streamlit``` library, ```plotly``` for interactive plots, and probably a few others. My import list on main.py looked like this for this app:
 
 ```
 import streamlit as st
@@ -76,6 +76,10 @@ with tab1:
 ```
 Now I can see a wide range of years and really put into perspecive how Disney's stocks are doing. Hovering over the peak allows me to see that Disney's highest stock price in the last few years was $203 back in March of 2021 and that it hasn't been that high since. But I could play with the slider and go check out how Disney was doing back in the 1960s if I wanted to.
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/stmlt-linegraph.png" alt="" class="center"/>
+
+Those sidebar buttons from earlier can be used to look at the data from different brands so you can see patterns like peaks in the late 2010s and how none of the newer movies have even gotten close to the same opening revenue. Of course part of that can be explained by the change in culture following the pandemic in 2020, but it also coincides with the release of Disney+ in November of 2019.
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/stmlt-marvel-scatter.png" alt="" class="center"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/stmlt-lucasfilm-scatter.png" alt="" class="center"/>
 
 Interested in more ways to visualize your data? Me too! Streamlit has lots of resources for learning about their cool features like [input widgets](https://docs.streamlit.io/develop/api-reference/widgets), [tabs](https://docs.streamlit.io/develop/api-reference/layout/st.tabs), and the [sidebar](https://docs.streamlit.io/develop/api-reference/layout/st.sidebar). And of course if you want to continue learning from my code, you can always check out my [repo](https://github.com/KimmyBeeW/streamlit-disney-datavis) and the code I used to implement the cool features in my [streamlit app](https://disney-stocks-and-movies.streamlit.app/).
 
