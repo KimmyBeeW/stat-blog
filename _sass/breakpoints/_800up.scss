@@ -93,13 +93,14 @@ HEADER STYLING
 				border: none;
 
 				a {
-					color: rgb(200, 200, 200);  //title color?
+					color: #ff0;  //home about and github buttons
 					font-size: .9em;
+					font-style: bold;
 					text-decoration: none;
 					padding: 0 .25em;
 
 					&:hover {
-						color: darken(white, 20%);
+						color: darken(#ff0, 20%);
 					}
 				}
 
