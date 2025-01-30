@@ -33,8 +33,11 @@
 }
 
 // If IE support is needed you can add them here or create another stylesheet for specific IE fixes
-// change header color
+// change Title color "Coding In Color"
 .header h1 a {
-    color: #fbb7b3;
-    text-decoration: none
+    color: #f5a39f;
+    text-decoration: none;
+	&:hover {
+		color: darken(#f5a39f, 20%);
+	}
 }
